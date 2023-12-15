@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Position | Snow Fall</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalnia:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200;8..144,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="snow.css" />
+  </head>
+  <body>
+    <div id="landscape" class="overlay">
+      <div id="snow" class="overlay">
+        <div class="flake left"></div>
+        <div class="flake"></div>
+        <div class="flake"></div>
+        <div class="flake left"></div>
+        <div class="flake"></div>
+        <div class="flake"></div>
+        <div class="flake right"></div>
+        <div class="flake right"></div>
+        <div class="flake left"></div>
+        <div class="flake"></div>
+        <div class="flake"></div>
+        <div class="flake right"></div>
+        <div class="flake right"></div>
+        <div class="flake"></div>
+        <div class="flake"></div>
+        <div class="flake left"></div>
+        <div class="flake left"></div>
+        <div class="flake"></div>
+        <div class="flake"></div>
+        <div class="flake right"></div>
+        <div class="flake"></div>
+        <div class="flake"></div>
+        <div class="flake right"></div>
+      </div>
+    </div>
+
+    <section id="content">
+      <div class="container">
+        <header>
+          <h1>Fairytaile Finland holidays</h1>
+          <h2>The Christmas capital in Rovaniemi</h2>
+
+          <img src="images/Santa Village Finland.jpeg" alt="logo" />
+          <p>
+            It doesn’t get much more fairytale than the official home of Santa
+            Claus. When he’s not squeezing himself down chimneys, Santa spends
+            his time in Rovaniemi, the capital of Finnish Lapland. Decked out in
+            fairy lights and Christmas trees year round, visit Father Christmas
+            and his elves at Santa Claus village just outside town. Come between
+            December and March to see the wooden buildings prettily slumped in
+            snow.
+          </p>
+        </header>
+
+        <form action="#">
+          <fieldset class="tickets">
+            <legend>Tickets</legend>
+            <label for=""
+              >7 Tickets left. Hurry up and buy!
+              <input type="number" min="1" max="7" value="1" />
+            </label>
+          </fieldset>
+          <fieldset class="period">
+            <legend>Period</legend>
+            <label for="#"
+              ><span>select departure date</span> <input type="date"
+            /></label>
+            <label for="#">select arrival date <input type="date" /></label>
+          </fieldset>
+          <fieldset>
+            <legend>Personal data</legend>
+            <label for="#"
+              >Your full name
+              <input type="text" placeholder="enter your full name"
+            /></label>
+            <label for="#"
+              >Your email address<input
+                type="mail"
+                placeholder="enter your email address"
+            /></label>
+          </fieldset>
+          <input type="checkbox" name="" id="submit" />
+          <label for="submit" class="button"
+            ><span class="go">Let's GO!</span><span class="processing">...Processing...</span>
+          </label>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
