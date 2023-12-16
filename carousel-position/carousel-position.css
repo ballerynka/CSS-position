@@ -1,0 +1,59 @@
+body {
+  background: radial-gradient(#fff8, black);
+  background-repeat: no-repeat;
+  height: 100%;
+  font-size: 30px;
+  color: white;
+}
+.carousel {
+  position: relative;
+  border: 5px solid red;
+  width: 500px;
+  height: 700px;
+  margin: 100px;
+  perspective: 2000px;
+}
+.carousel .slide {
+  width: 500px;
+  height: 700px;
+  position: absolute;
+  border: 1px solid red;
+}
+
+.carousel .slide:nth-child(1) {
+  background-color: #1238;
+  transform: rotateY(-35deg) translateZ(-800px);
+}
+.carousel .slide:nth-child(2) {
+  background-color: #1388;
+  transform: rotateY(-35deg) translateZ(-600px);
+}
+.carousel .slide:nth-child(3) {
+  background-color: #1438;
+  transform: rotateY(-35deg) translateZ(-400px);
+}
+.carousel .slide:nth-child(4) {
+  background-color: #1538;
+  transform: rotateY(-35deg) translateZ(-200px);
+}
+
+.carousel .slide:nth-child(5) {
+  background-color: #1638;
+  transform: rotateY(-35deg) translateZ(0px);
+}
+.carousel .slide a {
+  position: absolute;
+  display: block;
+  text-decoration: none;
+  top: 50%;
+  right: -15px;
+  background-color: #fffc;
+  color: #777;
+  width: 45px;
+  height: 45px;
+  border-radius: 25px;
+  text-align: center;
+}
+.carousel .slide a::after {
+  content: url(images/chevron-right-solid.svg);
+}
