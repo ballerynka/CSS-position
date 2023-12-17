@@ -1,0 +1,105 @@
+body {
+  background-image: url(images/image-bn2py3s5.png);
+}
+.paper-effect {
+  width: 1000px;
+  height: 600px;
+  border: 10px solid white;
+  background-color: #777;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  perspective: 1000px;
+}
+.paper-effect .part {
+  float: left;
+  width: 200px;
+  height: 600px;
+  background-image: url(images/colorado-springs-vacation-1000x600.jpeg);
+  transition: 0.5s;
+}
+
+.paper-effect > div:nth-child(2) {
+  background-position: -200px 0px;
+}
+.paper-effect > div:nth-child(3) {
+  background-position: -400px 0px;
+}
+.paper-effect > div:nth-child(4) {
+  background-position: -600px 0px;
+}
+.paper-effect > div:nth-child(5) {
+  background-position: -800px 0px;
+}
+
+.paper-effect:hover .part:nth-child(1) {
+  background-image: linear-gradient(to right, transparent 50%, #11111135 90%),
+    url(images/colorado-springs-vacation-1000x600.jpeg);
+  transition: 0.5s;
+}
+
+.paper-effect:hover .part:nth-child(2) {
+  background-position: -200px 0px;
+  transform: translateX(-50px) rotateY(-40deg) scale(1.07);
+  background-image: linear-gradient(to left, transparent 50%, #11111135 90%),
+    url(images/colorado-springs-vacation-1000x600.jpeg);
+  transition: 0.5s;
+}
+
+.paper-effect:hover .part:nth-child(3) {
+  background-position: -400px 0px;
+  transform: translateX(-87px) rotateY(40deg) scale(1.07);
+  background-image: linear-gradient(to right, transparent 50%, #11111135 90%),
+    url(images/colorado-springs-vacation-1000x600.jpeg);
+  transition: 0.5s;
+}
+
+.paper-effect:hover .part:nth-child(4) {
+  background-position: -600px 0px;
+  transform: translateX(-124px) rotateY(-40deg) scale(1.07);
+  background-image: linear-gradient(to left, transparent 50%, #11111135 90%),
+    url(images/colorado-springs-vacation-1000x600.jpeg);
+  transition: 0.5s;
+}
+.paper-effect:hover .part:nth-child(5) {
+  background-position: -800px 0px;
+  transform: translateX(-161px) rotateY(40deg) scale(1.07);
+  background-image: linear-gradient(to right, transparent 50%, #11111135 90%),
+    url(images/colorado-springs-vacation-1000x600.jpeg);
+  transition: 0.5s;
+}
+.hidden {
+  width: 200px;
+  height: 600px;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+.hidden .eye,
+.heart {
+  font-size: 25px;
+  color: #fff7;
+  text-align: center;
+  margin-top: 60px;
+}
+.hidden .fa-eye,
+.hidden .fa-heart {
+  margin-right: 10px;
+}
+.hidden .arrow {
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+  text-align: center;
+  outline: 2px solid #fff7;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+.hidden .arrow .fa-arrow-right-long {
+  transform: translateY(14px);
+  color: #fff7;
+}
