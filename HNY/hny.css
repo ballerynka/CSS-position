@@ -1,0 +1,250 @@
+body {
+  background-color: #222;
+  --big-circle: 180px;
+  --medium-circle: 160px;
+  --small-circle: 140px;
+  --big-square: 40px;
+  --medium-square: 35px;
+  --small-square: 30px;
+  --big-elipse-width: 20px;
+  --big-elipse-height: 50px;
+  --medium-elipse-width: 15px;
+  --medium-elipse-height: 45px;
+  --small-elipse-width: 10px;
+  --small-elipse-height: 40px;
+  margin: 0;
+  background-image: url(images/1.webp);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  font-family: "Italianno", cursive;
+}
+#hny {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+.first-line {
+  height: 33.3vh;
+  width: 100vw;
+}
+.circle {
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+  margin: 0 20px 0 20px;
+  background-image: url(images/2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+.circle-3 {
+  width: var(--big-circle);
+  height: var(--big-circle);
+  top: 150px;
+}
+.circle-2,
+.circle-4 {
+  width: var(--medium-circle);
+  height: var(--medium-circle);
+  top: 100px;
+}
+.circle-1,
+.circle-5 {
+  width: var(--small-circle);
+  height: var(--small-circle);
+  top: 50px;
+}
+.circle-second-line-1 {
+  left: -20px;
+  top: 100px;
+}
+.circle-second-line-2 {
+  top: 150px;
+}
+.circle-second-line-3 {
+  left: 20px;
+  top: 100px;
+}
+.circle-third-line-1 {
+  top: 150px;
+  left: -20px;
+}
+.circle-third-line-2 {
+  top: 200px;
+  left: -10px;
+}
+.circle-third-line-3 {
+  top: 200px;
+  left: 10px;
+}
+.circle-third-line-4 {
+  top: 150px;
+  left: 20px;
+}
+.square {
+  border: 1px solid transparent;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: goldenrod;
+  filter: drop-shadow(1px 1px 3px rgb(18, 0, 0));
+  box-shadow: 0 -2px 5px rgb(112, 55, 2);
+}
+.circle-3 .square {
+  width: var(--big-square);
+  height: var(--big-square);
+  top: -25px;
+  z-index: -1;
+}
+.circle-1 .square,
+.circle-5 .square {
+  width: var(--small-square);
+  height: var(--small-square);
+  top: -20px;
+  z-index: -1;
+}
+.circle-2 .square,
+.circle-4 .square {
+  width: var(--medium-square);
+  height: var(--medium-square);
+  top: -20px;
+  z-index: -1;
+}
+.elipse {
+  border: 2px solid goldenrod;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  filter: drop-shadow(1px 3px 5px rgb(57, 30, 0));
+  box-shadow: 0 -2px 5px rgb(69, 39, 0);
+}
+.circle-3 .elipse {
+  width: var(--big-elipse-width);
+  height: var(--big-elipse-height);
+  top: -55px;
+  z-index: -2;
+}
+.circle-1 .elipse,
+.circle-5 .elipse {
+  width: var(--small-elipse-width);
+  height: var(--small-elipse-height);
+  top: -50px;
+  z-index: -2;
+}
+.circle-2 .elipse,
+.circle-4 .elipse {
+  width: var(--medium-elipse-width);
+  height: var(--medium-elipse-height);
+  top: -45px;
+  z-index: -2;
+}
+.circle::before {
+  content: "";
+  width: 1px;
+  height: 100vh;
+  border-left: 1px solid rgb(156, 1, 1);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -3;
+  filter: drop-shadow(1px 1px 3px rgb(118, 0, 0));
+  box-shadow: 0 -2px 2px rgb(30, 1, 1);
+}
+.circle-3::before {
+  top: calc((100vh + 55px) * -1);
+}
+.circle-1::before,
+.circle-5::before {
+  top: calc((100vh + 50px) * -1);
+}
+
+.circle-2::before,
+.circle-4::before {
+  top: calc((100vh + 45px) * -1);
+}
+.circle-1 .cover,
+.circle-5 .cover {
+  background-image: radial-gradient(
+    at 10%,
+    transparent 60%,
+    rgba(32, 1, 1, 0.818)
+  );
+  position: absolute;
+  width: var(--small-circle);
+  height: var(--small-circle);
+  border-radius: 50%;
+  filter: drop-shadow(1px 5px 5px rgb(124, 2, 2));
+  box-shadow: 0 -2px 5px black;
+}
+.circle-2 .cover,
+.circle-4 .cover {
+  background-image: radial-gradient(
+    at 10%,
+    transparent 60%,
+    rgba(32, 1, 1, 0.818)
+  );
+  position: absolute;
+  width: var(--medium-circle);
+  height: var(--medium-circle);
+  border-radius: 50%;
+  filter: drop-shadow(1px 5px 5px rgb(124, 2, 2));
+  box-shadow: 0 -2px 5px black;
+}
+.circle-3 .cover {
+  background-image: radial-gradient(
+    at 10%,
+    transparent 60%,
+    rgba(32, 1, 1, 0.818)
+  );
+  position: absolute;
+  width: var(--big-circle);
+  height: var(--big-circle);
+  border-radius: 50%;
+  filter: drop-shadow(1px 5px 5px rgb(124, 2, 2));
+  box-shadow: 0 -2px 5px black;
+}
+span {
+  position: absolute;
+  color: #fff;
+  z-index: 20;
+  text-shadow: -2px -2px 5px rgb(134, 1, 1);
+}
+.circle-1 span,
+.circle-5 span {
+  font-size: 80px;
+  transform: translate(-25px, 30px);
+}
+.circle-2 span,
+.circle-4 span {
+  font-size: 90px;
+  transform: translate(-30px, 30px);
+}
+
+.circle-3 span {
+  font-size: 110px;
+  transform: translate(-35px, 30px);
+}
+.circle-third-line-3 span {
+  transform: translate(-45px, 30px);
+}
+.first-line :nth-child(2) span {
+  transform: translate(-45px, 30px);
+}
+.circle-second-line-3 span {
+  transform: translate(-45px, 30px);
+}
+.circle-second-line-1 span {
+  transform: translate(-35px, 30px);
+}
+
+.signature {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 24px;
+  color: white;
+  text-shadow: 2px 2px 5px rgb(108, 2, 2);
+}
